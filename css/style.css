@@ -517,6 +517,22 @@ span {
         font-size: 50%;
     }
 
+    .home .home-content h1 {
+        font-size: 2.7rem;
+    }
+
+    .home .home-content .written-text {
+        font-size: 1.6rem;
+    }
+
+    .home .home-img img {
+        width: 65vw;
+    }
+
+    .oMe .oMe-img img {
+        width: 65vw;
+    }
+
     .kontakt form .input-box input {
         width: 100%;
     }
