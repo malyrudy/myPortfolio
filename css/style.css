@@ -9,6 +9,7 @@
     outline: none;
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
+    user-select: none;
 }
 
 :root {
@@ -123,6 +124,10 @@ span {
     font-size: 5.6rem;
     font-weight: 700;
     line-height: 1.3;
+}
+
+.home-content h1 span {
+    display: none;
 }
 
 .home-content p {
@@ -332,6 +337,10 @@ span {
     cursor: pointer;
 }
 
+.kontakt h2 {
+    margin-bottom: 3rem;
+}
+
 .kontakt h3 {
     font-size: 2.6rem;
     text-align: center;
@@ -340,6 +349,38 @@ span {
 .kontakt h3 span a {
     color: var(--main-color);
 }
+
+#kontakt .email-link {
+    color: var(--text-color);
+}
+
+#kontakt .email-link a {
+    color: var(--main-color);
+}
+
+#kontakt .contact-link {
+    font-size: 1.8rem;
+}
+
+.kontakt-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.kontakt-info h4 {
+    font-size: 2.2rem;
+}
+
+.kontakt-info li {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
 .footer {
     display: flex;
     justify-content: space-between;
