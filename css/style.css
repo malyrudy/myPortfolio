@@ -33,6 +33,7 @@ section {
     min-height: 100vh;
     padding: 10rem 9% 2rem;
 }
+
 .header {
     position: fixed;
     top: 0;
@@ -264,6 +265,8 @@ span {
 
 .portfolio {
     background-color: var(--second-bg-color); 
+    min-height: auto;
+    padding-bottom: 10rem;
 }
 
 .portfolio h2 {
@@ -298,6 +301,11 @@ span {
     box-shadow: 0 0 1rem var(--bg-color);
     border-radius: 2rem;
     transition: .5s ease;
+}
+
+.kontakt {
+    min-height: auto !important;
+    padding-bottom: 10rem;
 }
 
 .kontakt form {
