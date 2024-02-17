@@ -43,9 +43,9 @@ ScrollReveal({
     delay: 200
 });
 
-ScrollReveal().reveal('.home-content, .heading', { origin: "top" });
+ScrollReveal().reveal('.home-content, .heading, .kontakt-info h4', { origin: "top" });
 ScrollReveal().reveal('.home-img, .sluzby-container, .portfolio-box, .kontakt form', { origin: "bottom" });
-ScrollReveal().reveal('.home-content h1, .oMe-img', { origin: "left" });
+ScrollReveal().reveal('.home-content h1, .oMe-img, .kontakt-info li', { origin: "left" });
 ScrollReveal().reveal('.home-content p, .oMe-content, .kontakt h3', { origin: "right" });
 
 // Typed js 

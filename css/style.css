@@ -363,13 +363,13 @@ span {
 }
 
 .kontakt-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    margin-top: 2.5rem;
-    margin-bottom: 3rem;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    list-style-type: none !important;
+    margin-top: 2.5rem !important;
+    margin-bottom: 3rem !important;
 }
 
 .kontakt-info h4 {
