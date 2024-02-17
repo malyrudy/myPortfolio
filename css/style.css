@@ -127,10 +127,6 @@ span {
     line-height: 1.3;
 }
 
-.home-content h1 span {
-    display: none;
-}
-
 .home-content p {
     font-size: 1.6rem;
 }
@@ -509,7 +505,9 @@ span {
 
     .oMe img {
         width: 50vw;
+        /* height: 350px; */
         margin-top: 4rem;
+        /* object-fit: cover; */
     }
 
     .sluzby h2 {
