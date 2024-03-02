@@ -20,11 +20,11 @@
 
         <i class='bx bx-menu' id="menu-icon"></i>
         <nav class="navbar">
-            <a href="#home" class="active">Domů</a>
-            <a href="#oMe">O mě</a>
-            <a href="#sluzby">Služby</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#kontakt">Kontakt</a>
+            <a href="#home" class="active navbar-item-home">Domů</a>
+            <a href="#oMe" class="navbar-item-oMe">O mě</a>
+            <a href="#sluzby" class="navbar-item-sluzby">Služby</a>
+            <a href="#portfolio" class="navbar-item-portfolio">Portfolio</a>
+            <a href="#kontakt" class="navbar-item-kontakt">Kontakt</a>
         </nav>
     </header>
 
@@ -144,5 +144,42 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <!-- custom js -->
     <script src="./js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Smooth scrolling script -->
+    <script>            
+        jQuery(document).ready(function() {
+        
+            jQuery('.navbar-item-home').click(function(event) {
+                event.preventDefault();
+                console.log("Ahoj");
+                $('html, body').animate({scrollTop:$('#home').position().top}, 300);
+                return false;
+            })
+            jQuery('.navbar-item-oMe').click(function(event) {
+                event.preventDefault();
+                console.log("Ahoj");
+                $('html, body').animate({scrollTop:$('#oMe').position().top}, 200);
+                return false;
+            })
+            jQuery('.navbar-item-sluzby').click(function(event) {
+                event.preventDefault();
+                console.log("Ahoj");
+                $('html, body').animate({scrollTop:$('#sluzby').position().top}, 300);
+                return false;
+            })
+            jQuery('.navbar-item-portfolio').click(function(event) {
+                event.preventDefault();
+                console.log("Ahoj");
+                $('html, body').animate({scrollTop:$('#portfolio').position().top}, 300);
+                return false;
+            })
+            jQuery('.navbar-item-kontakt').click(function(event) {
+                event.preventDefault();
+                console.log("Ahoj");
+                $('html, body').animate({scrollTop:$('#kontakt').position().top}, 300);
+                return false;
+            })
+        });
+    </script>
 </body>
 </html>

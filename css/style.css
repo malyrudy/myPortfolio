@@ -56,6 +56,10 @@ section {
     color: var(--text-color);
     font-weight: 600;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo img {
