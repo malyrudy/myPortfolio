@@ -275,33 +275,59 @@ span {
 
 .portfolio-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 2.5rem;
 }
 
 .portfolio-container .portfolio-box {
     border-radius: 2rem;
-    overflow: hidden;
+    padding: 3rem;
+    background: var(--second-bg-color);
+    border: .1rem solid rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+    justify-content: space-between;
+    min-height: 350px;
+    transition: .5s ease;
+}
+
+.portfolio-box:hover {
+    border-color: var(--main-color);
+    transform: translateY(-8px);
+    box-shadow: 0 1rem 3rem var(--main-color);
+}
+
+.portfolio-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .portfolio-box h3 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    margin-bottom: 1.2rem;
+    color: var(--text-color);
+}
+
+.portfolio-tag {
+    font-size: 1.2rem;
+    color: var(--main-color);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    letter-spacing: .05rem;
+}
+
+.portfolio-desc {
+    font-size: 1.5rem;
+    color: #ccc;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    flex-grow: 1;
 }
 
 .portfolio-box img {
-    max-width: 35Opx;
-    height: 250px;
-    object-fit: contain;
-    object-position: left top;
-    box-shadow: 0 0 1rem var(--bg-color);
-    border-radius: 2rem;
-    transition: .5s ease;
+    display: none;
 }
 
 .kontakt {
@@ -528,7 +554,7 @@ span {
     }
 
     .portfolio-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
     }
 }
 
